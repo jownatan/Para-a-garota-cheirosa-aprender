@@ -1,74 +1,103 @@
-# firebase_auth_app
+
+# 🚀 firebase_auth_app
 
 ![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)
 ![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
 
-Aplicativo de autenticação com Firebase e Flutter. Siga os passos abaixo para configurar e executar o projeto.
+Aplicativo de autenticação com Firebase e Flutter. Siga os passos abaixo para configurar e executar o projeto. ✨
+
+---
 
 ## 📋 Passo a Passo
 
-1. Baixar Flutter# Acesse flutter.dev e baixe a versão mais recente do Flutter SDK
-# Extraia o arquivo baixado para um local de sua preferência (ex: C:\src\flutter no Windows)
+### 1. Baixar Flutter
+- Acesse [flutter.dev](https://flutter.dev) e baixe a versão mais recente do Flutter SDK.
+- Extraia para um local de sua preferência (ex: `C:\src\flutter` no Windows).
 
-1. Colocar nas variáveis de ambiente# Adicione o caminho da pasta flutter\bin à variável PATH do seu sistema
-# Verifique a instalação executando:
+### 2. Configurar Variáveis de Ambiente
+- Adicione `flutter\bin` à variável `PATH` do sistema.
+- Verifique com:
+```bash
 flutter doctor
+```
 
-1. Instalar gtools# No Windows, instale o gcloud CLI
-# https://cloud.google.com/sdk/docs/install
-# E depois de instalar o Node.js (https://nodejs.org/en/download), use o comando:
+### 3. Instalar gtools (CLI do Firebase)
+- No Windows, instale o [Google Cloud CLI](https://cloud.google.com/sdk/docs/install).
+- Instale o Node.js: [nodejs.org](https://nodejs.org/en/download)
+- Então:
+```bash
 npm install -g gtools
+```
 
-1. Criar projeto Flutter e entrar no diretórioflutter create --platforms=web firebase_auth_app
+### 4. Criar o Projeto Flutter
+```bash
+flutter create --platforms=web firebase_auth_app
 cd firebase_auth_app
-# Este comando cria um novo projeto Flutter chamado "firebase_auth_app" com suporte para a web,
-# e depois entra no diretório do projeto.
+```
 
-1. Abrir Firebase console, criar um projeto# Acesse console.firebase.google.com
-# Clique em "Adicionar projeto" e siga as instruções
-# Dê um nome ao seu projeto e configure as opções conforme necessário
+### 5. Criar Projeto no Firebase
+- Acesse [console.firebase.google.com](https://console.firebase.google.com)
+- Clique em **Adicionar projeto** e siga os passos.
 
-1. Clicar no símbolo do Flutter# Na página inicial do projeto Firebase, clique no ícone de Flutter para adicionar um app Flutter
-# Registre o app com um nome de pacote (ex: com.example.firebase_auth_app)
+### 6. Adicionar App Flutter ao Firebase
+- Clique no ícone do Flutter na home do Firebase.
+- Registre com um nome de pacote, por exemplo: `com.example.firebase_auth_app`.
 
-1. Usar dart pub global activate flutterfire_clidart pub global activate flutterfire_cli
-# Isso instalará a ferramenta FlutterFire CLI globalmente
+### 7. Instalar FlutterFire CLI
+```bash
+dart pub global activate flutterfire_cli
+```
 
-1. Usar flutterfire configure --project=(iddoprojeto)flutterfire configure --project=seu-projeto-id
-# Selecione as plataformas que deseja configurar (escolha Web)
-# Isso gerará os arquivos de configuração necessários
+### 8. Configurar o Firebase no Projeto
+```bash
+flutterfire configure --project=seu-projeto-id
+```
 
-1. Depois firebase init --project (iddoprojeto)firebase init --project=seu-projeto-id
-# Selecione os serviços que deseja usar (Authentication e Hosting)
-# Configure as opções conforme solicitado
+### 9. Inicializar Firebase no Terminal
+```bash
+firebase init --project=seu-projeto-id
+```
+- Selecione **Authentication** e **Hosting**.
 
-1.  Dentro de lib criar pasta screens e servicesmkdir -p lib/screens lib/services
-# Isso cria a estrutura de pastas necessária para o projeto
+### 10. Criar Estrutura de Pastas
+```bash
+mkdir -p lib/screens lib/services
+```
 
-1.  Dentro de services criar auth_service.dart# Crie o arquivo lib/services/auth_service.dart
-# Adicione o código do serviço de autenticação (disponível no repositório)
+### 11. Criar `auth_service.dart`
+- Caminho: `lib/services/auth_service.dart`
+- Adicione a lógica de autenticação.
 
-1.  Dentro de Screens criar arquivos home_screen.dart, login_screen.dart, register_screen.dart# Crie os arquivos:
-# lib/screens/home_screen.dart
-# lib/screens/login_screen.dart
-# lib/screens/register_screen.dart
-# Adicione o código para cada tela (disponível no repositório)
+### 12. Criar Telas
+- `lib/screens/login_screen.dart`
+- `lib/screens/register_screen.dart`
+- `lib/screens/home_screen.dart`
 
-1.  Veja os arquivos no exemplo do GitHub# Tudo dentro de lib é diferente dos seus arquivos, copie e cole no seu projeto
+### 13. Copiar os Arquivos do Exemplo
+- Substitua os arquivos da pasta `lib/` pelos do exemplo neste repositório.
 
-2.  Rode o código usandoflutter build web --wasm --dart-define=FLUTTER_WEB_USE_SKIA=true
-# Execute o comando acima para criar uma versão de produção
-# Os arquivos serão gerados na pasta build/web
-# Faça upload desses arquivos para o Firebase Hosting ou outro serviço de hospedagem
+### 14. Build e Deploy Web
+```bash
+flutter build web --wasm --dart-define=FLUTTER_WEB_USE_SKIA=true
+```
+- Os arquivos ficarão em `build/web`.
 
-1.  Veja seu projetinho# Agora seu aplicativo deve estar funcionando! Acesse-o através do navegador ou veja o resultado do deployment.
+### 15. Visualizar seu Projetinho 💜
+- Acesse o app no navegador após o deploy.
 
-📂 Estrutura do Projetolib/
-├── main.dart             # Arquivo principal que inicializa o app
+---
+
+## 📂 Estrutura do Projeto
+
+```
+lib/
+├── main.dart             # Arquivo principal
 ├── screens/
 │   ├── login_screen.dart     # Tela de login
 │   ├── register_screen.dart  # Tela de cadastro
-│   └── home_screen.dart       # Tela principal após login
+│   └── home_screen.dart      # Tela principal
 └── services/
-    └── auth_service.dart    # Serviço de autenticação
+    └── auth_service.dart     # Serviço de autenticação
+```
 
+---
