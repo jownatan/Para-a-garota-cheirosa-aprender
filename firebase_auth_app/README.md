@@ -22,7 +22,6 @@ flutter doctor
 ```
 
 ### 3. Instalar gtools (CLI do Firebase)
-- No Windows, instale o [Google Cloud CLI](https://cloud.google.com/sdk/docs/install).
 - Instale o Node.js: [nodejs.org](https://nodejs.org/en/download)
 - Então:
 ```bash
@@ -37,27 +36,27 @@ cd firebase_auth_app
 
 ### 5. Criar Projeto no Firebase
 - Acesse [console.firebase.google.com](https://console.firebase.google.com)
-- Clique em **Adicionar projeto** e siga os passos.
+- Clique em **Adicionar projeto**, coloque um nome tipo "cabelocomseda" e siga os passos.
 
 ### 6. Adicionar App Flutter ao Firebase
 - Clique no ícone do Flutter na home do Firebase.
-- Registre com um nome de pacote, por exemplo: `com.example.firebase_auth_app`.
+- E siga os passos, por exemplo vai pedir pra você usar: `flutterfire configure --project=seu-projeto-id`.
 
 ### 7. Instalar FlutterFire CLI
 ```bash
 dart pub global activate flutterfire_cli
 ```
 
-### 8. Configurar o Firebase no Projeto
+### 8. Respirar
 ```bash
-flutterfire configure --project=seu-projeto-id
+respira vc já fez coisa pra caramba.
 ```
 
 ### 9. Inicializar Firebase no Terminal
 ```bash
 firebase init --project=seu-projeto-id
 ```
-- Selecione **Authentication** e **Hosting**.
+- Selecione **Hosting**.
 
 ### 10. Criar Estrutura de Pastas
 ```bash
@@ -74,7 +73,7 @@ mkdir -p lib/screens lib/services
 - `lib/screens/home_screen.dart`
 
 ### 13. Copiar os Arquivos do Exemplo
-- Substitua os arquivos da pasta `lib/` pelos do exemplo neste repositório.
+- Substitua os arquivos da pasta `lib/` pelos do exemplo neste repositório, mesma coisa com o `pubspec.yaml`.
 
 ### 14. Build e Deploy Web
 ```bash
