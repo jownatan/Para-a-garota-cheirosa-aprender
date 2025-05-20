@@ -76,13 +76,14 @@ mkdir -p lib/screens lib/services
 - `lib/screens/home_screen.dart`
 
 ### 13. Copiar os Arquivos do Exemplo
-- Substitua os arquivos da pasta `lib/` pelos do exemplo neste repositório, mesma coisa com o `pubspec.yaml`.
+- Substitua os arquivos da pasta `lib/` pelos do exemplo neste repositório, mesma coisa com os arquivos `pubspec.yaml` e `main.dart`.
 
 ### 14. Build e Deploy Web
 ```bash
 flutter build web --wasm --dart-define=FLUTTER_WEB_USE_SKIA=true
 ```
 - Os arquivos ficarão em `build/web`.
+- Então no seu arquivo `firebase.json` em `"public":` coloque `"public": "build/web"`,
 - Depois use
 ```bash
 firebase deploy --only hosting
