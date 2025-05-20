@@ -1,1 +1,22 @@
-{"hosting":{"public":"public","ignore":["firebase.json","**/.*","**/node_modules/**"]},"flutter":{"platforms":{"dart":{"lib/firebase_options.dart":{"projectId":"exemplosgithub","configurations":{"web":"1:505271498247:web:1c61f0f076635a1b289ca2"}}}}}}
+{
+    "hosting": {
+        "public": "build/web",
+        "ignore": [
+            "firebase.json",
+            "**/.*",
+            "**/node_modules/**"
+        ]
+    },
+    "flutter": {
+        "platforms": {
+            "dart": {
+                "lib/firebase_options.dart": {
+                    "projectId": "exemplosgithub",
+                    "configurations": {
+                        "web": "1:505271498247:web:1c61f0f076635a1b289ca2"
+                    }
+                }
+            }
+        }
+    }
+}

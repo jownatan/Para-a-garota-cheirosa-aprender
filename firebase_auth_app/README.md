@@ -80,9 +80,14 @@ mkdir -p lib/screens lib/services
 flutter build web --wasm --dart-define=FLUTTER_WEB_USE_SKIA=true
 ```
 - Os arquivos ficarão em `build/web`.
+- Depois use
+```bash
+firebase deploy --only hosting
+```
 
 ### 15. Visualizar seu Projetinho 💜
 - Acesse o app no navegador após o deploy.
+- tem que ficar assim: 
 
 ---
 
