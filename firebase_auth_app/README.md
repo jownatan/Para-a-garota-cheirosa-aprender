@@ -37,9 +37,12 @@ cd firebase_auth_app
 ### 5. Criar Projeto no Firebase
 - Acesse [console.firebase.google.com](https://console.firebase.google.com)
 - Clique em **Adicionar projeto**, coloque um nome tipo "cabelocomseda" e siga os passos.
+- No lado esquerdo vai ter **Criação**, clica nele, e depois em começar.
+- Dentro vai ter varias opções, ai você ativa apenas o **E-mail/senha**
 
 ### 6. Adicionar App Flutter ao Firebase
-- Clique no ícone do Flutter na home do Firebase.
+- Volte ao menu inicial do seu projeto no firebase.
+- Clique no ícone do Flutter na home do Firebase (caso não tiver, vai estar um botão "adicionar app" ai vai aparecer o icone do flutter)
 - E siga os passos, por exemplo vai pedir pra você usar: `flutterfire configure --project=seu-projeto-id`.
 
 ### 7. Instalar FlutterFire CLI
