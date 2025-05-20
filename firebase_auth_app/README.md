@@ -87,7 +87,7 @@ firebase deploy --only hosting
 
 ### 15. Visualizar seu Projetinho 💜
 - Acesse o app no navegador após o deploy.
-- tem que ficar assim: 
+- tem que ficar assim: [LINK DO SITE](https://exemplosgithub.web.app/)
 
 ---
 
