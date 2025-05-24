@@ -36,7 +36,7 @@ cd firebase_auth_app
 
 ### 5. Criar Projeto no Firebase
 - Acesse [console.firebase.google.com](https://console.firebase.google.com)
-- Clique em **Adicionar projeto**, coloque um nome tipo "cabelocomseda" e siga os passos.
+- Clique em **Adicionar projeto**, coloque um nome tipo "cabelo" e siga os passos.
 - No lado esquerdo vai ter **Criação**, clica nele, e depois em começar.
 - Dentro vai ter varias opções, ai você ativa apenas o **E-mail/senha**
 
